@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="menu">Menu Icon</string>
+    <string name="logo">Logo</string>
+    <string name="search">Search Icon</string>
+    <string name="mute_icon">Mute Icon</string>
+</resources>

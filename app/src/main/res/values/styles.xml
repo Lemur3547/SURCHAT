@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="roundedImg">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="smallText">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="mediumText">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="mainText">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="bigText">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="hugeText">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="blackText">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    <style name="grayText">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+</resources>

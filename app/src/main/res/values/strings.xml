@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SURChat</string>
+
+    <string name="chat_name">Создатели</string>
+    <string name="last_message_author">Ariez:</string>
+    <string name="last_message_text">Das ist Scheiße</string>
+    <string name="last_message_time">15:28</string>
+    <string name="unread_messages_count">2</string>
+</resources>
