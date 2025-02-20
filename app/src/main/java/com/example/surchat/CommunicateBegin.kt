@@ -12,7 +12,7 @@ class CommunicateBegin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.start)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -20,7 +20,7 @@ class CommunicateBegin : AppCompatActivity() {
         }
         val openButton: Button = findViewById<Button>(R.id.communicate_begin)
         openButton.setOnClickListener {
-            val intent = Intent(this, Authorization::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
     }
