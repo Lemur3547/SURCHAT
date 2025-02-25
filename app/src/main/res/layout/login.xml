@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Authorization"
+    tools:context=".Login"
     android:orientation="vertical"
     android:background="@color/grayBackground">
 
@@ -19,5 +19,25 @@
         app:srcCompat="@drawable/logo_1"
         app:tint="@color/black"/>
 
-
+    <EditText
+        android:id="@+id/login_input"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:hint="Логин"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:fontFamily="@font/ubuntu_regular"
+        />
+    <EditText
+        android:id="@+id/password_input"
+        android:inputType="textPassword"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:hint="Пароль"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:fontFamily="@font/ubuntu_regular"
+        />
 </RelativeLayout>
