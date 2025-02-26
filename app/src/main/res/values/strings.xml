@@ -6,4 +6,9 @@
     <string name="last_message_text">Das ist Scheiße</string>
     <string name="last_message_time">15:28</string>
     <string name="unread_messages_count">2</string>
+
+    <string name="new_message">Новое сообщение</string>
+    <string name="new_group">Создать группу</string>
+    <string name="add_contact">Добавить контакт</string>
+    <string name="new_channel">Создать канал</string>
 </resources>

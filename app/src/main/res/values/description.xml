@@ -5,4 +5,8 @@
     <string name="logo">Logo</string>
     <string name="search">Search Icon</string>
     <string name="mute_icon">Mute Icon</string>
+    <string name="arrow_back">Arrow back Icon</string>
+    <string name="group">Group Icon</string>
+    <string name="person_add">Person add Icon</string>
+    <string name="channel">Channel Icon</string>
 </resources>
