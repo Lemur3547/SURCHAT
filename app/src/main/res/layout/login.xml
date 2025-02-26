@@ -24,10 +24,11 @@
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:hint="Логин"
-        android:padding="8dp"
+        android:padding="25dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="450dp"
         android:fontFamily="@font/ubuntu_regular"
+        android:background="@drawable/round"
         />
     <EditText
         android:id="@+id/password_input"
@@ -35,9 +36,19 @@
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:hint="Пароль"
-        android:padding="8dp"
+        android:padding="25dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"
         android:fontFamily="@font/ubuntu_regular"
+        android:background="@drawable/round"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="800dp"
+        android:textColor="@color/black"
+        android:text="Регистрация"/>
 </RelativeLayout>
