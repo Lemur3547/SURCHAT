@@ -5,4 +5,5 @@
     <color name="black">#333333</color>
     <color name="blue">#444C89</color>
     <color name="grayBackground">#DDDDDD</color>
+    <color name="transparent">#00000000</color>
 </resources>

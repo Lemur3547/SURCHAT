@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayBackground"
+    tools:context=".GroupChat">
+
+    <!-- Верхняя панель с названием чата и аватаркой -->
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/blue">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_arrow_back_white" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/chat_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:src="@drawable/img_avatar"
+            app:shapeAppearanceOverlay="@style/roundedImg" />
+
+        <TextView
+            android:id="@+id/chat_title"
+            style="@style/whiteText20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@id/chat_avatar"
+            android:text="Создатели" />
+
+        <TextView
+            style="@style/grayText16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/chat_title"
+            android:layout_marginTop="39dp"
+            android:text="3 участника" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_more_vert_white" />
+
+    </RelativeLayout>
+
+
+    <!-- Список сообщений -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/message_input_container"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <!-- Контейнер для ввода сообщений -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <!-- Кнопка смайликов -->
+        <ImageButton
+            android:id="@+id/emoji_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:contentDescription="Смайлики"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/ic_emoji_gray" />
+
+        <!-- Поле ввода сообщения -->
+        <EditText
+            android:id="@+id/message_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/emoji_button"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/attachment_button"
+            android:background="@color/transparent"
+            style="@style/grayText20sp"
+            android:hint="Сообщение"
+            android:textColorHint="@color/gray" />
+
+        <!-- Кнопка прикрепления файлов -->
+        <ImageButton
+            android:id="@+id/attachment_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/microphone_button"
+            android:backgroundTint="@color/transparent"
+            android:layout_marginStart="5dp"
+            android:contentDescription="Прикрепить файл"
+            android:src="@drawable/ic_attach_file_gray" />
+
+        <!-- Кнопка микрофона (отображается, пока поле пустое) -->
+        <ImageButton
+            android:id="@+id/microphone_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/transparent"
+            android:contentDescription="Голосовое сообщение"
+            android:src="@drawable/ic_mic_gray" />
+
+        <!-- Кнопка отправки сообщения (по умолчанию скрыта) -->
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@color/transparent"
+            android:contentDescription="Отправить"
+            android:src="@drawable/ic_send_blue"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
