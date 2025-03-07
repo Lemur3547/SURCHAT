@@ -9,6 +9,7 @@
     <style name="regularText">
         <item name="fontFamily">@font/ubuntu_regular</item>
         <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="mediumText">
@@ -30,8 +31,18 @@
     <style name="whiteText" parent="regularText">
         <item name="android:textColor">@color/white</item>
     </style>
-    
-    <style name="smallBlackText">
-        <item name="android:textSize">14sp</item>
+
+    <style name="whiteText20sp" parent="whiteText">
+        <item name="android:textSize">20sp</item>
+  
     </style>
+
+    <style name="grayText16sp" parent="grayText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="grayText20sp" parent="grayText">
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>

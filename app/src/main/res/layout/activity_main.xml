@@ -23,7 +23,7 @@
             android:layout_marginStart="15dp"
             android:layout_alignParentStart="true"
             android:contentDescription="@string/menu"
-            android:src="@drawable/menu_24dp_000000_fill1_wght400_grad0_opsz24">
+            android:src="@drawable/ic_menu_white">
         </ImageView>
 
         <ImageView
@@ -42,7 +42,7 @@
             android:layout_marginEnd="15dp"
             android:layout_alignParentEnd="true"
             android:contentDescription="@string/search"
-            android:src="@drawable/search_24dp_000000_fill1_wght400_grad0_opsz24_1">
+            android:src="@drawable/ic_search_white">
 
         </ImageView>
     </RelativeLayout>
@@ -54,7 +54,7 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/avatar"
+            android:src="@drawable/img_avatar"
             app:shapeAppearanceOverlay="@style/roundedImg"
             android:layout_centerVertical="true"
             android:layout_marginStart="15dp">
@@ -141,7 +141,7 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/kirkorov"
+            android:src="@drawable/img_kirkorov"
             app:shapeAppearanceOverlay="@style/roundedImg"
             android:layout_centerVertical="true"
             android:layout_marginStart="15dp">
@@ -164,7 +164,7 @@
             <ImageView
                 android:layout_width="21dp"
                 android:layout_height="21dp"
-                android:src="@drawable/mute_svgrepo_com_1"
+                android:src="@drawable/ic_mute_gray"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="1dp"
                 android:contentDescription="@string/mute_icon">
@@ -235,7 +235,7 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/avatar"
+            android:src="@drawable/img_avatar"
             app:shapeAppearanceOverlay="@style/roundedImg"
             android:layout_centerVertical="true"
             android:layout_marginStart="15dp">
@@ -318,7 +318,7 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/avatar"
+            android:src="@drawable/img_avatar"
             app:shapeAppearanceOverlay="@style/roundedImg"
             android:layout_centerVertical="true"
             android:layout_marginStart="15dp">
