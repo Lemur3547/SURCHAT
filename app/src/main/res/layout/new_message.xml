@@ -26,7 +26,7 @@
         </ImageView>
 
         <TextView
-            style="@style/whiteText24"
+            style="@style/whiteText24sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -60,7 +60,7 @@
             </ImageView>
 
             <TextView
-                style="@style/blackText18"
+                style="@style/blackText18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -87,7 +87,7 @@
             </ImageView>
 
             <TextView
-                style="@style/blackText18"
+                style="@style/blackText18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -137,7 +137,7 @@
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/kirkorov"
+                android:src="@drawable/img_kirkorov"
                 app:shapeAppearanceOverlay="@style/roundedImg"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="15dp">
