@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grayBackground"
+    android:orientation="vertical">
+
+
+    <!--Header-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/blue"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginVertical="19dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/arrow_back"
+            android:src="@drawable/arrow_back_24dp_000000_fill1_wght400_grad0_opsz24_1">
+
+        </ImageView>
+
+        <TextView
+            style="@style/whiteText24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginStart="70dp"
+            android:text="@string/new_message">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <!--Меню с действиями-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/create_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/group"
+                android:src="@drawable/group_30dp_000000_fill1_wght400_grad0_opsz24">
+
+            </ImageView>
+
+            <TextView
+                style="@style/blackText18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/new_group">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_group"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/person_add"
+                android:src="@drawable/person_add_30dp_000000_fill1_wght400_grad0_opsz24_1_">
+
+            </ImageView>
+
+            <TextView
+                style="@style/blackText18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/add_contact">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/create_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_contact"
+            android:layout_marginVertical="15dp"
+            android:layout_marginStart="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/channel"
+                android:src="@drawable/campaign_30dp_000000_fill1_wght400_grad0_opsz24">
+
+            </ImageView>
+
+            <TextView
+                style="@style/blackText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/new_channel">
+
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:background="@color/white"
+            android:layout_marginBottom="2dp">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/kirkorov"
+                app:shapeAppearanceOverlay="@style/roundedImg"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp">
+            </com.google.android.material.imageview.ShapeableImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Филипп Киркоров"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="75dp"
+                android:layout_marginVertical="14dp"
+                style="@style/mediumText"
+                android:textSize="18sp"
+                android:ellipsize="end"
+                android:maxLines="1">
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:background="@color/white"
+            android:layout_marginBottom="2dp">
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

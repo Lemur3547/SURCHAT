@@ -34,6 +34,7 @@
 
     <style name="whiteText20sp" parent="whiteText">
         <item name="android:textSize">20sp</item>
+  
     </style>
 
     <style name="grayText16sp" parent="grayText">
